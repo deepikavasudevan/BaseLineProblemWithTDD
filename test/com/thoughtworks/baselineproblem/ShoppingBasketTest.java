@@ -14,4 +14,11 @@ public class ShoppingBasketTest {
         assertEquals(shoppingBasket.contains(), 1);
     }
 
+    @Test
+    public void shouldHaveAtLeastTwoItems() {
+        Item items[]={new Item("book", 12.49), new Item("music CD", 14.99)};
+        ShoppingBasket shoppingBasket=new ShoppingBasket(items);
+
+        assertEquals(shoppingBasket.contains(), 2);
+    }
 }
