@@ -1,7 +1,8 @@
 package com.thoughtworks.baselineproblem;
 
-import org.junit.Assert;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class ShoppingBasketTest {
 
@@ -10,6 +11,7 @@ public class ShoppingBasketTest {
         Item items[] = {new Item("book", 12.49)};
         ShoppingBasket shoppingBasket = new ShoppingBasket(items);
 
-        Assert.assertEquals(shoppingBasket.contains(), 1);
+        assertEquals(shoppingBasket.contains(), 1);
     }
+
 }

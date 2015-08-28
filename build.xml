@@ -3,7 +3,7 @@
 
     <target name="build" depends="clean">
         <mkdir dir="out"/>
-        <javac destdir="out">
+        <javac destdir="out" includeantruntime="false">
             <src path="src;test"/>
             <classpath location="lib/junit-4.11.jar"/>
         </javac>
